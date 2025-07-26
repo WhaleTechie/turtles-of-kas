@@ -2,7 +2,7 @@
   "name": "turtles-of-kas",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://WhaleTechie.github.io/turtles-of-kas",
+  "homepage": "https://whaletechie.github.io/turtles-of-kas",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
