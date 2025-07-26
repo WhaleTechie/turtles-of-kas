@@ -5,7 +5,7 @@ import turtle2 from './assets/turtle2.jpg';
 function TurtleInfo() {
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', lineHeight: '1.7' }}>
-      <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>🐢 About the Project – Turtles of Kaş</h2>
+      <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>🐢 About the Project </h2>
       <p>
         Sea turtles are vital to the health of marine ecosystems like coral reefs and seagrass meadows.
         In Kaş, we’re using <strong>non-invasive photo-identification</strong> to study and protect these incredible creatures.
