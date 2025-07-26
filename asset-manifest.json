@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/turtles-of-kas/static/css/main.f855e6bc.css",
-    "main.js": "/turtles-of-kas/static/js/main.95d3ac25.js",
+    "main.js": "/turtles-of-kas/static/js/main.63aacfc3.js",
     "static/js/453.eaa3f93d.chunk.js": "/turtles-of-kas/static/js/453.eaa3f93d.chunk.js",
-    "static/media/logo.svg": "/turtles-of-kas/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.jpg": "/turtles-of-kas/static/media/logo.66bc02974dfde29a7719.jpg",
     "index.html": "/turtles-of-kas/index.html",
     "main.f855e6bc.css.map": "/turtles-of-kas/static/css/main.f855e6bc.css.map",
-    "main.95d3ac25.js.map": "/turtles-of-kas/static/js/main.95d3ac25.js.map",
+    "main.63aacfc3.js.map": "/turtles-of-kas/static/js/main.63aacfc3.js.map",
     "453.eaa3f93d.chunk.js.map": "/turtles-of-kas/static/js/453.eaa3f93d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.95d3ac25.js"
+    "static/js/main.63aacfc3.js"
   ]
 }
