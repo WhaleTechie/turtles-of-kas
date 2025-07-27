@@ -3,11 +3,11 @@ import logo from './assets/logo.jpg';
 import './App.css';
 import TurtleInfo from './TurtleInfo'; 
 import translations from './translations';
-import UploadForm from './UploadForm';
+import Contacts from './Contacts';
 
 function App() {
   const [lang, setLang] = useState('en');
-  const t = translations[lang]; // current translation object
+  const t = translations[lang]; 
 
   return (
     <div className="App">
@@ -34,10 +34,11 @@ function App() {
       </header>
 
       <main style={{ padding: 20 }}>
-        <TurtleInfo lang={lang} />
-        <UploadForm />
+        <TurtleInfo />
+        <Contacts />
       </main>
     </div>
+  
   );
 }
 
