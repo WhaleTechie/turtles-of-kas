@@ -3,6 +3,7 @@ import logo from './assets/logo.jpg';
 import './App.css';
 import TurtleInfo from './TurtleInfo'; 
 import translations from './translations';
+import UploadForm from './UploadForm';
 
 function App() {
   const [lang, setLang] = useState('en');
@@ -34,6 +35,7 @@ function App() {
 
       <main style={{ padding: 20 }}>
         <TurtleInfo lang={lang} />
+        <UploadForm />
       </main>
     </div>
   );
