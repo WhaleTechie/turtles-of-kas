@@ -4,6 +4,8 @@ import './App.css';
 import TurtleInfo from './TurtleInfo'; 
 import translations from './translations';
 import Contacts from './Contacts';
+//import Gallery from './Gallery';
+import GoogleSheetPDF from "./Catalog"; 
 
 function App() {
   const [lang, setLang] = useState('en');
@@ -23,7 +25,7 @@ function App() {
         
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img src={logo} alt="Turtles of Kas Logo" style={{ height: 120, marginRight: 15 }} />
-          <h1 style={{ fontSize: '2rem' }}>{t.title}</h1>
+          <h1 style={{ fontSize: '1.5rem' }}>{t.title}</h1>
         </div>
 
         <div>
@@ -35,6 +37,7 @@ function App() {
 
       <main style={{ padding: 20 }}>
         <TurtleInfo />
+        <GoogleSheetPDF /> 
         <Contacts />
       </main>
     </div>
