@@ -1,0 +1,24 @@
+{
+  "title": "Kaş'ın Kaplumbağaları",
+  "about": {
+    "title": "Proje Hakkında",
+    "text": "Deniz kaplumbağaları deniz ekosistemleri için hayati öneme sahiptir. Kaş'ta, onları incelemek ve korumak için fotoğraf tanımlamayı kullanıyoruz."
+  },
+  "help": {
+    "title": "Nasıl Yardımcı Olabilirsiniz",
+    "text": "Kaplumbağaların her açıdan fotoğraf veya video çekin, ancak her zaman güvenli mesafeyi koruyun."
+  },
+  "cheekprint": {
+    "title": "Kaplumbağa Yanak Deseni Kimliği",
+    "text": "Her kaplumbağanın benzersiz bir yüz deseni vardır, bu sayede bireyleri tanıyabilir ve hareketlerini takip edebiliriz."
+  },
+  "catalog": {
+    "updated": "Katalog güncellendi: {{date}}"
+  },
+  "contacts": {
+    "title": "Bizimle iletişime geçin",
+    "email": "E-posta",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Turtles of Kaş",
+  "about": {
+    "title": "About the Project",
+    "text": "Sea turtles are vital to marine ecosystems. In Kaş, we use photo-identification to study and protect them."
+  },
+  "help": {
+    "title": "How You Can Help",
+    "text": "Take photos or videos of turtles from any side or above, but always keep a safe distance."
+  },
+  "cheekprint": {
+    "title": "Turtle Cheekprint ID",
+    "text": "Each turtle has a unique facial pattern, which allows us to recognize individuals and track their movements."
+  },
+  "catalog": {
+    "updated": "Catalog updated on {{date}}"
+  },
+  "contacts": {
+    "title": "Contact us directly",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram"
+  }
+}

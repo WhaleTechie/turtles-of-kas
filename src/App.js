@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import logo from './assets/logo.jpg';
 import './App.css';
-import TurtleInfo from './TurtleInfo'; 
-import translations from './translations';
+import TurtleInfo from './TurtleInfo';
 import Contacts from './Contacts';
-//import Gallery from './Gallery';
-import GoogleSheetPDF from "./Catalog"; 
+import GoogleSheetPDF from "./Catalog";
+import './i18n';
+import { Twemoji } from 'react-emoji-render';
 
 function App() {
-  const [lang, setLang] = useState('en');
-  const t = translations[lang]; 
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className="App">
@@ -24,35 +28,39 @@ function App() {
         }}>
         
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={logo} alt="Turtles of Kas Logo" style={{ height: 120, marginRight: 15 }} />
-          <h1 style={{ fontSize: '1.5rem' }}>{t.title}</h1>
+          <img src={logo} alt={t('title')} style={{ height: 120, marginRight: 15 }} />
+          <h1 style={{ fontSize: '1.5rem' }}>{t('title')}</h1>
         </div>
 
-        <div>
-          <button onClick={() => setLang('en')} style={langBtnStyle}>EN</button>
-          <button onClick={() => setLang('tr')} style={langBtnStyle}>TR</button>
-          <button onClick={() => setLang('ru')} style={langBtnStyle}>RU</button>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <button onClick={() => changeLanguage('en')} style={emojiBtnStyle}>
+            <Twemoji text="🇬🇧" />
+          </button>
+          <button onClick={() => changeLanguage('tr')} style={emojiBtnStyle}>
+            <Twemoji text="🇹🇷" />
+          </button>
+          <button onClick={() => changeLanguage('ru')} style={emojiBtnStyle}>
+            <Twemoji text="🇷🇺" />
+          </button>
         </div>
+
       </header>
 
       <main style={{ padding: 20 }}>
-        <TurtleInfo />
-        <GoogleSheetPDF /> 
-        <Contacts />
+        <TurtleInfo /> {/* all text inside TurtleInfo is translated via i18next */}
+        <GoogleSheetPDF t={t} /> {/* pass t for catalog translations */}
+        <Contacts t={t} /> {/* pass t for contact translations */}
       </main>
     </div>
-  
   );
 }
 
-const langBtnStyle = {
-  marginLeft: 8,
-  padding: '6px 10px',
-  fontSize: '1rem',
-  backgroundColor: '#ecf0f1',
+const emojiBtnStyle = {
+  background: 'none',
   border: 'none',
-  borderRadius: 4,
-  cursor: 'pointer'
+  padding: 0,
+  cursor: 'pointer',
+  fontSize: '1.5rem', // make emojis slightly larger
 };
 
 export default App;
