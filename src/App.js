@@ -1,10 +1,11 @@
+// App.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from './assets/logo.jpg';
 import './App.css';
 import TurtleInfo from './TurtleInfo';
 import Contacts from './Contacts';
-import GoogleSheetPDF from "./Catalog";
+import Catalog from "./Catalog";
 import './i18n';
 import { Twemoji } from 'react-emoji-render';
 import SendersList from "./SendersList";
@@ -44,14 +45,13 @@ function App() {
             <Twemoji text="🇷🇺" />
           </button>
         </div>
-
       </header>
 
       <main style={{ padding: 20 }}>
-        <TurtleInfo /> {/* all text inside TurtleInfo is translated via i18next */}
-        <GoogleSheetPDF t={t} /> {/* pass t for catalog translations */}
+        <TurtleInfo />
+        <Catalog />
         <SendersList />
-        <Contacts t={t} /> {/* pass t for contact translations */}
+        <Contacts t={t} />
       </main>
     </div>
   );
@@ -62,7 +62,7 @@ const emojiBtnStyle = {
   border: 'none',
   padding: 0,
   cursor: 'pointer',
-  fontSize: '1.5rem', // make emojis slightly larger
+  fontSize: '1.5rem',
 };
 
 export default App;
