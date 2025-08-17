@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/turtles-of-kas/static/css/main.f855e6bc.css",
-    "main.js": "/turtles-of-kas/static/js/main.a3a1e599.js",
+    "main.js": "/turtles-of-kas/static/js/main.540abcd3.js",
     "static/js/453.eaa3f93d.chunk.js": "/turtles-of-kas/static/js/453.eaa3f93d.chunk.js",
+    "static/media/freediving_obysova.jpg": "/turtles-of-kas/static/media/freediving_obysova.dcfc3b118f0187ee15b5.jpg",
     "static/media/logo.jpg": "/turtles-of-kas/static/media/logo.66bc02974dfde29a7719.jpg",
     "index.html": "/turtles-of-kas/index.html",
     "main.f855e6bc.css.map": "/turtles-of-kas/static/css/main.f855e6bc.css.map",
-    "main.a3a1e599.js.map": "/turtles-of-kas/static/js/main.a3a1e599.js.map",
+    "main.540abcd3.js.map": "/turtles-of-kas/static/js/main.540abcd3.js.map",
     "453.eaa3f93d.chunk.js.map": "/turtles-of-kas/static/js/453.eaa3f93d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.a3a1e599.js"
+    "static/js/main.540abcd3.js"
   ]
 }
