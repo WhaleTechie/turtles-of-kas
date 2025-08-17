@@ -10,7 +10,7 @@ const Catalog = () => {
     // Test if PDF is accessible
     const checkPDF = async () => {
       try {
-        const response = await fetch('/catalog1.pdf');
+        const response = await fetch('/catalog.pdf');
         if (response.ok) {
           const contentType = response.headers.get('content-type');
           if (contentType && contentType.includes('application/pdf')) {
@@ -54,7 +54,7 @@ const Catalog = () => {
         }}>
           <div style={{ marginBottom: '10px' }}><strong>Error:</strong> {error}</div>
           <div style={{ fontSize: '14px', color: '#666' }}>
-            Please make sure <code>catalog1.pdf</code> is in your <code>public</code> folder.
+            Please make sure <code>catalog.pdf</code> is in your <code>public</code> folder.
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@ const Catalog = () => {
             marginBottom: '20px'
           }}>
             <iframe
-              src="/catalog1.pdf"
+              src="/catalog.pdf"
               width="100%"
               height="600px"
               title="PDF Catalog"
@@ -88,7 +88,7 @@ const Catalog = () => {
               <div style={{ padding: '40px', textAlign: 'center' }}>
                 <p>Your browser doesn't support PDF viewing.</p>
                 <a 
-                  href="/catalog1.pdf" 
+                  href="/catalog.pdf" 
                   download="catalog.pdf"
                   style={{
                     display: 'inline-block',
@@ -109,7 +109,7 @@ const Catalog = () => {
           {/* Alternative options */}
           <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a 
-              href="/catalog1.pdf" 
+              href="/catalog.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{
