@@ -7,6 +7,7 @@ import Contacts from './Contacts';
 import GoogleSheetPDF from "./Catalog";
 import './i18n';
 import { Twemoji } from 'react-emoji-render';
+import SendersList from "./SendersList";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -49,6 +50,8 @@ function App() {
       <main style={{ padding: 20 }}>
         <TurtleInfo /> {/* all text inside TurtleInfo is translated via i18next */}
         <GoogleSheetPDF t={t} /> {/* pass t for catalog translations */}
+        <h2 style={{ marginBottom: "15px" }}>{t('contributors.title')}</h2>
+        <SendersList />
         <Contacts t={t} /> {/* pass t for contact translations */}
       </main>
     </div>

@@ -15,6 +15,10 @@
   "catalog": {
     "updated": "Catalog updated on {{date}}"
   },
+
+  "contributors": {
+    "title": "Contributors"
+  },
   "contacts": {
     "title": "Contact us directly",
     "email": "Email",

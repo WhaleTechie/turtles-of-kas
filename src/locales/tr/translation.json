@@ -15,6 +15,9 @@
   "catalog": {
     "updated": "Katalog güncellendi: {{date}}"
   },
+  "contributors": {
+    "title": "Projeye Katkıda Bulunanlar"
+},
   "contacts": {
     "title": "Bizimle iletişime geçin",
     "email": "E-posta",

@@ -15,6 +15,9 @@
   "catalog": {
     "updated": "Каталог обновлён: {{date}}"
   },
+  "contributors": {
+    "title": "Помогли проекту"
+},
   "contacts": {
     "title": "Свяжитесь с нами",
     "email": "Электронная почта",
