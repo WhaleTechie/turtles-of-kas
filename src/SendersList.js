@@ -1,16 +1,24 @@
 import { useTranslation } from "react-i18next";
 import SenderCircle from "./SenderCircle";
 import sveta_freed from "./assets/freediving_obysova.jpg";
+import seva_freed from "./assets/freediving_vsevolod.jpg"
+import bougainville from "./assets/bougainville.jpg"
+import nautilus from "./assets/nautilus.jpg"
+import kanyon from "./assets/kanyon.jpg"
+import culturekas from "./assets/culturekas.jpg"
+import muti from "./assets/muti.jpg"
 
 function SendersList() {
   const { t } = useTranslation();
 
   const senders = [
     { name: "Svetlana Obysova", avatar: sveta_freed, url: "https://www.instagram.com/freedivingkas_obysova/" },
-    { name: "TechCorp", avatar: "https://example.com/techcorp.jpg", url: "https://techcorp.com" },
-    { name: "Charlie", avatar: "https://example.com/charlie.jpg" },
-    { name: "David", avatar: "https://example.com/david.jpg" },
-    { name: "Eva", avatar: "https://example.com/eva.jpg" },
+    { name: "Vsevolod Atmazhitov", avatar: seva_freed, url: "https://www.instagram.com/freediving_vsevolod/" },
+    { name: "Kanyon Diving", avatar: kanyon, url: "https://www.instagram.com/kanyondivingkas/" },
+    { name: "BOUGAINVILLE DIVING", avatar: bougainville, url: "https://www.instagram.com/bougainvilledivecenter/" },
+    { name: "Nautilus Dive Center", avatar: nautilus, url: "https://www.instagram.com/nautilusdivingkas/" },
+    { name: "Kaş Kültür", avatar: culturekas, url: "https://www.instagram.com/culturekas/"},
+    { name: "Muti Diving Center", avatar: muti, url: "https://www.instagram.com/mutidivingcenter/"}
   ];
 
   return (

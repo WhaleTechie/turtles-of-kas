@@ -50,7 +50,6 @@ function App() {
       <main style={{ padding: 20 }}>
         <TurtleInfo /> {/* all text inside TurtleInfo is translated via i18next */}
         <GoogleSheetPDF t={t} /> {/* pass t for catalog translations */}
-        <h2 style={{ marginBottom: "15px" }}>{t('contributors.title')}</h2>
         <SendersList />
         <Contacts t={t} /> {/* pass t for contact translations */}
       </main>
